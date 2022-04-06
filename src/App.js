@@ -1,10 +1,16 @@
 import React from 'react';
-
+import { Fragment } from 'react/cjs/react.development';
+import Header from './components/LAYOUT/Header';
+import Meals from './components/MEALS/Meals';
 function App() {
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <Fragment>
+
+      <Header/>
+      <main>
+        <Meals/>
+      </main>
+    </Fragment>
   );
 }
 
