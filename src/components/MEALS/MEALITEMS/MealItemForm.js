@@ -4,7 +4,11 @@ import classes from "./MealItemForm.module.css";
 
 const MealItemForm = props=>{
 
-    return <div className={classes.form}>
+    const addItem = event => {
+        event.preventDefault();
+    }
+
+    return <div className={classes.form} onSubmit={addItem}>
         <Input label="Amount" input={{
             id:'amount_'+props.id,
             type:'number',
